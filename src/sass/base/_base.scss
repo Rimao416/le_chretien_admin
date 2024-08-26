@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: $main-color;
+    color: $gray-color;
+    font-size: $default-font-size-2;
+    font-weight: 500;
+}
+::-webkit-scrollbar {
+    width: .8rem;
+    display: none;
+    // visibility: hidden;
+    opacity: 0;
+  }
+  ::-webkit-scrollbar:hover{
+    opacity: 1;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $main-color; 
+    border-radius: 50px;
+    opacity: 0;
+    
+  }
+  ::-webkit-scrollbar-track:hover{
+opacity: 1;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 50px;
+    opacity: 0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    opacity: 1;
+  }
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+    @media (max-width:600px) {
+        font-size: 50%;
+    }
+    @include respond-phone {
+        font-size: 50%;
+    }
+
+
+    @include respond(tab-land) { // width < 900px
+        font-size: 56.25%; // 1rem = 8px; 8px/16px = 70%
+    }
+    @include respond(tab-port) { // width < 600px
+        font-size: 50%; // 1rem = 9px; 9px/16px = 60%
+    }
+    @include respond(phone) { // width < 350px
+        font-size: 30%;
+    } 
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 6px; 6px/16px = 80%
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+    @include respond(phone) {
+        padding: 0;
+    }
+
+}

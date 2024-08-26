@@ -1,0 +1,39 @@
+// INPUT
+.input {
+  @include inputDefault;
+  // min-width: 30%;
+  width: 100%;
+}
+.textArea {
+  @include inputDefault;
+}
+// BUTTON AVEC ICON
+.btn-green {
+  @include btn--container(#00a5a2, #00a5a233);
+}
+.btn-red{
+  @include btn--container(#DB555D, #DB555D33);
+}
+.btn-yellow{
+  @include btn--container(#F7B725,#F7B72533);
+}
+.btn-blue{
+  @include btn--container(#17B1DF,#17B1DF33);
+}
+
+// BUTTON SANS ICONE
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  &--primary {
+    background-color: $green-color !important;
+  }
+  &--danger{
+    background-color: #DB555D !important;
+  }
+  color: $white-color;
+  border-radius: 5px;
+  // @include flex-center;
+}

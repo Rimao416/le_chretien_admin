@@ -1,0 +1,12 @@
+.category{
+    &__header{
+        // display: none;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        gap: 2rem;
+        // *{
+        //     flex-basis: 30%;
+        // }
+    }
+}

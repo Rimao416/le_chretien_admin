@@ -1,0 +1,36 @@
+.card{
+    background-color: #1A1C1E !important;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    // width: 50rem;
+    height: 30rem;
+    overflow: hidden;
+    &__img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 20px; 
+margin-bottom: 2rem;
+        object-fit: cover;
+        background-position: center;
+    }
+    &__title{
+        font-size: 2rem;
+        font-weight:700 !important;
+        margin-bottom: 2rem;
+    }
+    &__text{
+        margin-bottom: 2rem;
+    }
+    &__btn{
+        padding: 1rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $green-color;
+        color: $white-color;
+        cursor: pointer;
+        // &:hover{
+        //     background-color: $color-secondary;
+        // }
+    }
+}

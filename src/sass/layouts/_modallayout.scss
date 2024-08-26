@@ -1,0 +1,51 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1500;
+  background-color: rgba(49,49,49,0.8);
+  &__overlay {
+    @include absCenter;
+    border: 1px solid $gray-color-3;
+    background-color:$main-color;
+    box-shadow: 6px 6px 22px -6px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 6px 6px 22px -6px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 6px 6px 22px -6px rgba(0, 0, 0, 0.51);
+    padding: 20px;
+    font-size: $default-font-size-2;
+    filter: none !important;
+    min-width: 60rem;
+    // height: 50rem;
+  }
+  &__close {
+    position: absolute;
+    right: 5%;
+    color: white;
+    // background-color: $disabled-button;  
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    padding: 10px;
+  }
+  &__title{
+    font-size: $default-font-size-8;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid $gray-color-3;
+    padding-bottom: 1rem;
+    // display: none;
+  }
+  &__wrapper{
+    height: 50rem;
+    overflow: scroll;
+    // display: none;
+  }
+}
+
+

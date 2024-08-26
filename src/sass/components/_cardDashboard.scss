@@ -1,0 +1,38 @@
+.cardDashboard {
+  background-color: $main-color !important;
+  display: flex;
+  justify-content: space-between;
+  height: 9.1rem;
+  width: 100%;
+  padding: 2rem;
+  align-items: center;
+  // border-radius: 10px;
+  &__wrapper {
+  }
+  &__number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+    &__value{
+      &:nth-child(1){
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      &:nth-child(2){
+        font-size: $default-font-size-3;
+      color: $green-color-2 !important; 
+      }
+      &__icon{
+        margin-right: .5rem;
+        svg{
+          fill : $green-color-2!important //A changer avec le temps
+        }
+
+        // display: none;
+      }
+    }
+
+  
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "fullName": "Jane Doe",
+      "biography": "Jane Doe is a renowned author known for her captivating storytelling.",
+      "photo": "jane_doe.jpg"
+    },
+    {
+      "id": 2,
+      "fullName": "John Smith",
+      "biography": "John Smith is a prolific writer with a passion for literature and creativity.",
+      "photo": "john_smith.jpg"
+    },
+    {
+      "id": 3,
+      "fullName": "Alice Johnson",
+      "biography": "Alice Johnson is an award-winning novelist who explores complex themes in her works.",
+      "photo": "alice_johnson.jpg"
+    },
+    {
+      "id": 4,
+      "fullName": "Michael Brown",
+      "biography": "Michael Brown is a bestselling author known for his gripping mystery novels.",
+      "photo": "michael_brown.jpg"
+    }
+  ]
+}
